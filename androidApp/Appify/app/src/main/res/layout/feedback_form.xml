@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/default_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/feedback_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/thank_u_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_back_image"
+            android:padding="7dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/thank_you"
+            android:textColor="@color/black_color"
+            android:textStyle="normal" />
+
+        <ScrollView
+            android:id="@+id/feedback_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thank_u_text">
+
+            <LinearLayout
+                android:id="@+id/feedbackInnerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:id="@+id/feedbackLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_color"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/feefback_form_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:background="@color/white_color"
+                        android:textSize="14dp"
+                        android:hint="@string/write_comment"
+                        android:maxLength="500" />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/app_theme_color" />
+
+                    <TextView
+                        android:id="@+id/text_counter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="1dp"
+                        android:padding="2dp"
+                        android:background="@color/white_color"
+                        android:textColor="@color/dark_gray_color"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/submit_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/submit_button"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/feedback_ad_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedback_scroll"
+            android:orientation="vertical">
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="bottom"
+                ads:adSize="BANNER"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                ads:adUnitId="@string/banner_admob_ad_unit_id" />
+
+            <RelativeLayout
+                android:id="@+id/feedback_ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

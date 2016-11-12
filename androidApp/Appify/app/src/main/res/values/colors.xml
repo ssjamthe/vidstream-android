@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_theme_color">#15da19</color>
+    <color name="app_theme_darker_color">#29a703</color>
+
+    <!--Make sure do not change below color-->
+    <color name="white_color">#FFFFFF</color>
+    <color name="gray_color">#CCCCCC</color>
+    <color name="dark_gray_color">#777777</color>
+    <color name="ad_bg_color">#AA000000</color>
+    <color name="black_color">#000000</color>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fitness</string>
+    <string name="banner_admob_ad_unit_id">ca-app-pub-9457891612292134/4990221400</string>
+
+    <string name="action_refresh">Refresh</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="feedback_form">Feedback Form</string>
+    <string name="action_exit">Exit</string>
+    <string name="exit_alert_message">Are you really want to exit?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="ok">OK</string>
+    <string name="no_internet_screen">Ohhh. you are not connected with internet !</string>
+    <string name="no_internet_screen_try_again">please try again...</string>
+    <string name="personalize_text">Personalize this space with your own selected videos.</string>
+    <string name="comming_soon">Coming Soon.</string>
+    <string name="player_error">Error initializing YouTube player</string>
+    <string name="write_comment">Write your comment here...</string>
+    <string name="thank_you">Thank you for taking the time to fill in our online feedback form. By providing us your feedback, you are helping us understand what we do well and what improvements we need to implement.</string>
+
+</resources>

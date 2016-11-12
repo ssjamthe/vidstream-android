@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/rounded_edit"
+    android:padding="6dp" android:orientation="horizontal">
+
+    <com.google.android.youtube.player.YouTubeThumbnailView 
+        android:id="@+id/videoThumbalList"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp" 
+        android:layout_marginRight="5dp" 
+        android:layout_marginBottom="5dp"
+        android:padding="1.5dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/rect_back_image"   />
+
+    <TextView
+        android:id="@+id/videoTextList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/videoThumbalList"
+        android:gravity="center_vertical"
+        android:text="JMD Group"
+        android:textColor="@color/app_theme_color"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+    
+     <TextView
+        android:id="@+id/videoIdList"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white_color"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/videoThumbalList"
+        android:layout_below="@+id/videoTextList"
+        android:gravity="center"/>
+
+</LinearLayout>
